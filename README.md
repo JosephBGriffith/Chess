@@ -21,6 +21,6 @@ The main framework used to determine whether a move is valid involves the use of
 to a piece's position at the time a move is attempted.
 ###### matchcomponents.piece
 A `Piece` is merely a `PieceType` enumeration value combined with an `isWhite` boolean.
-The `PieceType` enum stores `Set\<Path\>`s for pieces which are setup via the `setupPathSets` method which is called in `main`.
+The `PieceType` enum stores `Set<Path>`s for pieces which are setup via the `setupPathSets` method which is called in `main`.
 ###### matchcomponents.player
 `HumanPlayer` overrides `Player`'s `getMove` method—which returns a `MoveAttempt`—by talking to the `Interaction`.
