@@ -12,9 +12,9 @@ The application won't allow players to make invalid moves.
 The `Application` class contains `main` which creates a new `ChessMatch` object as well as an `Interaction` object which
 serves as the application's GUI.
 #### interaction Package
-The `Interaction` object serves as the application's GUI, listens for clicks and calls `chessMatch`'s move method.
+The `Interaction` object serves as the application's GUI, listens for clicks and calls `chessMatch`'s `move` method.
 #### matchcomponents Package
-A `Board` is a `Piece[][]` for which a `null` value represents an empty square.
+A `Board` wraps a `Piece[][]` for which a `null` value represents an empty square.
 ###### matchcomponents.move
 A `MoveAttempt` consists of two file-rank pairs and its `isValid` method is called to determine if the pairs represent a valid move.
 The main framework used to determine whether a move is valid involves the use of `Path`s—sequences of `Displacement`s with respect
